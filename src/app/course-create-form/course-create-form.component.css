@@ -1,0 +1,7 @@
+.form-group {
+  width: 20%;
+}
+
+input.invalid {
+  border: solid 2px red;
+}

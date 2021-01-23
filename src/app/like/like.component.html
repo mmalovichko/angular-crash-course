@@ -1,0 +1,9 @@
+<div class="panel panel-default">
+  <div class="panel-heading">Some interesting post</div>
+  <div class="panel-body">
+    This is some post I want to like
+    <i class="bi bi-heart-fill" [style.color]="liked ? 'red' : 'gray'" (click)="onClick()"></i>
+  </div>
+  <div class="panel-footer">Total Likes {{totalLikes}}</div>
+</div>
+

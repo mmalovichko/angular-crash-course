@@ -19,7 +19,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/hello-world-css'),
+      dir: require('path').join(__dirname, './coverage/angular-crash-course'),
       subdir: '.',
       reporters: [
         { type: 'html' },

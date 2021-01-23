@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "hello-world-css": {
+    "angular-crash-course": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/hello-world-css",
+            "outputPath": "dist/angular-crash-course",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "hello-world-css:build"
+            "browserTarget": "angular-crash-course:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "hello-world-css:build:production"
+              "browserTarget": "angular-crash-course:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "hello-world-css:build"
+            "browserTarget": "angular-crash-course:build"
           }
         },
         "test": {
@@ -109,16 +109,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "hello-world-css:serve"
+            "devServerTarget": "angular-crash-course:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "hello-world-css:serve:production"
+              "devServerTarget": "angular-crash-course:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "hello-world-css"
+  "defaultProject": "angular-crash-course"
 }
