@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2">Viewing post with ID {{id}}</div>
+  </div>
+</div>
+<button class="btn btn-primary"
+        [routerLink]="['/posts', getNextId()]"
+        [queryParams]="{id: getNextId()}">
+  Next
+</button>

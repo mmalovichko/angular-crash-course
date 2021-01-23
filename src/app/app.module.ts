@@ -13,6 +13,11 @@ import {HttpClientModule} from '@angular/common/http';
 import { PostsComponent } from './posts-component/posts.component';
 import {PostService} from './common/services/post.service';
 import {MyErrorHandler} from './errors/MyErrorHandler';
+import {RouterModule} from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import { PostPageComponent } from './post-page/post-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,11 @@ import {MyErrorHandler} from './errors/MyErrorHandler';
     CourseCreateFormComponent,
     ReactiveSigupFormComponent,
     ReactiveChangePasswordFormComponent,
-    PostsComponent
+    PostsComponent,
+    NavbarComponent,
+    HomeComponent,
+    NotFoundPageComponent,
+    PostPageComponent
   ],
   imports: [
     BrowserModule,
